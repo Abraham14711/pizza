@@ -5,7 +5,7 @@
     <title>Pizza</title>
     <style>
         #cover{
-            background-image: url("for head.jpg");
+            background-image: url("../for head.jpg");
             background-position: top;
             backdrop-filter: blur(5px);
             -webkit-filter: blur(5px);
@@ -18,29 +18,19 @@
 <header style=background-color:orange;color:darkred>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
-      <a class="container"><h1>Pizza Family</h1></a>
+      <a class="container"><h1 style="padding-left: 46vw">Pizza Family</h1></a>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
-           <table style="width: 100vw">
+           <table style="padding-left: 17vw; width: 100vw">
                 <tr>
-                    <td>
-        <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#"><h2>Главная</h2></a>
-        </li>
- </td>
 <td>
         <li class="nav-item">
-            <a class="nav-link" href="#"><h2>Новинки</h2></a>
+            <a class="nav-link" href="/new"><h2>Новинки</h2></a>
         </li>
                          </td>
                     <td>
         <li class="nav-item">
-            <a class="nav-link" href="#"><h2>Акции</h2></a>
-        </li>
-                         </td>
-                    <td>
-        <li class="nav-item">
-            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"><h2>Контакты</h2></a>
+            <a class="nav-link disabled" href="/contacts" tabindex="-1" aria-disabled="true"><h2>Контакты</h2></a>
         </li>
                 </td>
       </ul>
@@ -51,38 +41,50 @@
 </nav>
 </header>
 <div id="cover" class="container-fluid"></div>
+<main style="background-color:orange">
+    <p>
+        <h2 style="padding-left:10vw;color: brown">
+    О нас:
+</h2>
+    </p>
+    <p>
+        <h3 style="color:brown;padding-left: 5vw; width: 90vw;">
+    Мы-новая пиццерия которая стремительно врывается на рынок, где соперничает с огромным количеством компаний. Именно поэтому нам так важна Ваша поддержка. Ваши заказы мотивируют наш персонал работать с еще большей самоотдачей. Мы надеемся что вам понравится наша продукция и вы придете за добавкой))
+</h3>
+    </p>
+</main>
 <table style="width: 100vw">
 <tr>
     <td>
         <div class="card mb-3" style="color:darkblue;width: 18rem;">
-            <img src="Пепперони.jpeg" class="card-img-top" alt="Пепперони" width=160>
+            <img src="../Пепперони.jpeg" class="card-img-top" alt="Пепперони" width=160>
             <div class="card-body">
                 <h2 class="card-title">Пепперони</h2>
                     <p class="card-text">Пикантная пепперони, увеличенная порция моцареллы, томатный соус</p>
                     <p class="card-text"> <h3>370 руб</h3> </p>
-                <button style="background-color: orange; border: orange" type="button" class="btn btn-primary btn-lg">Добавить в корзину</button>
+                <button style="background-color: orange; border: orange" type="button" class="btn btn-primary btn-lg">Перейти и заказать</button>
             </div>
         </div>
     </td>
     <td>
          <div class="card mb-3" style="color:darkblue;width: 18rem;">
-            <img src="Пицца с морепродуктами.jpg" class="card-img-top" alt="Пепперони" width=160>
+            <img src="Пицца%20с%20морепродуктами.jpg" class="card-img-top" alt="Пепперони" width=160>
             <div class="card-body">
-                <h2 class="card-title">Пицца с морепродуктами</h2>
+                <h2 class="card-title">Пицца с морепродуктами</h2><h2 style="color: red">Новинка!</h2>
                     <p class="card-text">Вкуснейшая пицца со сливочным соусом, оливками, креветками и зеленью </p>
                     <p class="card-text"><h3>380 руб</h3> </p>
-                    <button style="background-color: orange; border: orange" type="button" class="btn btn-primary btn-lg">Добавить в корзину</button>
+                    <button style="background-color: orange; border: orange" type="button" class="btn btn-primary btn-lg">Перейти и заказать</button>
             </div>
         </div>
     </td>
     <td>
         <div class="card mb-3" style="color:darkblue;width: 18rem;">
-            <img src="Сырная.jpg" class="card-img-top" alt="Пепперони" width=160>
+            <img src="../Сырная.jpg" class="card-img-top" alt="Пепперони" width=160>
             <div class="card-body">
                 <h2 class="card-title">Сырная пицца</h2>
                     <p class="card-text">Увеличенная порция моцареллы, сыры чеддер и пармезан, соус альфредо </p>
                     <p class="card-text"><h3>320 руб</h3> </p>
-                    <button style="background-color: orange; border: orange" type="button" class="btn btn-primary btn-lg">Добавить в корзину</button>
+                    <button style="background-color: orange; border: orange" type="button" class="btn btn-primary btn-lg">Перейти и заказать</button>
             </div>
         </div>
    </div>
@@ -92,36 +94,36 @@
             <td>
         <div class="col">
         <div class="card mb-3" style="color:darkblue;width: 18rem;">
-            <img src="Ветчина и грибы.jpg" class="card-img-top" alt="Пепперони" width=160>
+            <img src="Ветчина%20и%20грибы.jpg" class="card-img-top" alt="Пепперони" width=160>
             <div class="card-body">
                 <h2 class="card-title">Пицца ветчина и грибы</h2>
                     <p class="card-text">Ветчина, шампиньоны, увеличенная порция моцареллы, томатный соус </p>
                     <p class="card-text"><h3>330 руб</h3> </p>
-                   <button style="background-color: orange; border: orange" type="button" class="btn btn-primary btn-lg">Добавить в корзину</button>
+                   <button style="background-color: orange; border: orange" type="button" class="btn btn-primary btn-lg">Перейти и заказать</button>
             </div>
         </div>
    </div>
             </td>
             <td>
         <div class="card mb-3" style="color:darkblue;width: 18rem;">
-            <img src="Гавайская.jpg" class="card-img-top" alt="Пепперони" width=160>
+            <img src="../Гавайская.jpg" class="card-img-top" alt="Пепперони" width=160>
             <div class="card-body">
                 <h2 class="card-title">Гавайская пицца</h2>
                     <p class="card-text">Цыпленок, ананасы, моцарелла, томатный соус</p>
                     <p class="card-text"><h3>380 руб</h3> </p>
-                    <button style="background-color: orange; border: orange" type="button" class="btn btn-primary btn-lg">Добавить в корзину</button>
+                    <button style="background-color: orange; border: orange" type="button" class="btn btn-primary btn-lg">Перейти и заказать</button>
             </div>
         </div>
    </div>
             </td>
             <td>
         <div class="card mb-3" style="color:darkblue;width: 18rem;">
-            <img src="Гавайская.jpg" class="card-img-top" alt="Пепперони" width=160>
+            <img src="Клюквенный%20морс.jpg" class="card-img-top" alt="Пепперони" width=160>
             <div class="card-body">
-                <h2 class="card-title">Гавайская пицца</h2>
-                    <p class="card-text">Цыпленок, ананасы, моцарелла, томатный соус</p>
+                <h2 class="card-title">Клюквенный морс</h2><h2 style="color: red">Новинка!</h2>
+                    <p class="card-text">Негазированный напиток из свежей клюквы</p>
                     <p class="card-text"><h3>370 руб</h3> </p>
-                   <button style="background-color: orange; border: orange" type="button" class="btn btn-primary btn-lg">Добавить в корзину</button>
+                   <button style="background-color: orange; border: orange" type="button" class="btn btn-primary btn-lg">Перейти и заказать</button>
             </div>
         </div>
    </div>
@@ -131,36 +133,36 @@
             <td>
         <div class="col">
         <div class="card mb-3" style="color:darkblue;width: 18rem;">
-            <img src="Fanta.jpg" class="card-img-top" alt="Пепперони" width=120>
+            <img src="../Fanta.jpg" class="card-img-top" alt="Пепперони" width=120>
             <div class="card-body">
                 <h2 class="card-title">Fanta</h2>
                     <p class="card-text">Безалкогольный сильногазированный напиток</p>
                     <p class="card-text"><h3>80 руб</h3> </p>
-                   <button style="background-color: orange; border: orange" type="button" class="btn btn-primary btn-lg">Добавить в корзину</button>
+                   <button style="background-color: orange; border: orange" type="button" class="btn btn-primary btn-lg">Перейти и заказать</button>
             </div>
         </div>
    </div>
             </td>
             <td>
         <div class="card mb-3" style="color:darkblue;width: 18rem;">
-            <img src="Кола.jpg" class="card-img-top" alt="Пепперони" width=180>
+            <img src="../Кола.jpg" class="card-img-top" alt="Пепперони" width=180>
             <div class="card-body">
                 <h2 class="card-title">Coca-cola</h2>
                     <p class="card-text">Безалкогольный сильногазированный напиток</p>
                     <p class="card-text"><h3>80 руб</h3> </p>
-                   <button style="background-color: orange; border: orange" type="button" class="btn btn-primary btn-lg">Добавить в корзину</button>
+                   <button style="background-color: orange; border: orange" type="button" class="btn btn-primary btn-lg">Перейти и заказать</button>
             </div>
         </div>
    </div>
             </td>
             <td>
         <div class="card mb-3" style="color:darkblue;width: 18rem;">
-            <img src="Спрайт.jpg" class="card-img-top" alt="Пепперони" width=150>
+            <img src="../Спрайт.jpg" class="card-img-top" alt="Пепперони" width=150>
             <div class="card-body">
                 <h2 class="card-title">Sprite</h2>
                     <p class="card-text">Безалкогольный сильногазированный напиток</p>
                     <p class="card-text"><h3>80 руб</h3> </p>
-                   <button style="background-color: orange; border: orange" type="button" class="btn btn-primary btn-lg">Добавить в корзину</button>
+                   <button style="background-color: orange; border: orange" type="button" class="btn btn-primary btn-lg">Перейти и заказать</button>
             </div>
         </div>
    </div>
@@ -169,22 +171,22 @@
         <tr>
         <td>
         <div class="card mb-3" style="color:darkblue;width: 18rem;">
-            <img src="Вода без газа.jpg" class="card-img-top" alt="Пепперони" width=140>
+            <img src="Вода%20без%20газа.jpg" class="card-img-top" alt="Пепперони" width=140>
             <div class="card-body">
                 <h2 class="card-title">Bon Aqua без газа</h2>
                     <p class="card-text"><h3>50 руб</h3> </p>
-                    <button style="background-color: orange; border: orange" type="button" class="btn btn-primary btn-lg">Добавить в корзину</button>
+                    <button style="background-color: orange; border: orange" type="button" class="btn btn-primary btn-lg">Перейти и заказать</button>
             </div>
         </div>
    </div>
         </td>
         <td>
         <div class="card mb-3" style="color:darkblue;width: 18rem;">
-            <img src="Вода с газом.jpg" class="card-img-top" alt="Пепперони" width=140>
+            <img src="Вода%20с%20газом.jpg" class="card-img-top" alt="Пепперони" width=140>
             <div class="card-body">
                 <h2 class="card-title">Bon Aqua гозированная</h2>
                     <p class="card-text"><h3>75 руб</h3> </p>
-                    <button style="background-color: orange; border: orange" type="button" class="btn btn-primary btn-lg">Добавить в корзину</button>
+                    <button style="background-color: orange; border: orange" type="button" class="btn btn-primary btn-lg">Перейти и заказать</button>
             </div>
         </div>
    </div>
@@ -192,13 +194,22 @@
         </tr>
     </table>
 <footer style="background-color:orange;color:darkred">
-    <h1>Информация</h1>
-   <p>
-        <a href=" https://t.me/bot_for_food_bot?start=666" target="_blank" ><h5>Чат бот для заказа пиццы</h5></a>
-    </p>
-    <p>
-        <a href="tel:89270004257" target="_blank"> <h5>Контакты пиццерии</h5></a>
-    </p>
+<table style="background-color:orange; width: 100vw">
+    <tr>
+        <td>
+            <p><h3 style="color:brown">Наша выручка в этом месяце:</h3></p>
+            <p><h4>1345925 руб</h4></p>
+        </td>
+        <td>
+            <p><h3 style="color:brown">Наш самый прибыльный товар:</h3></p>
+            <p><h4>Пепперони</h4></p>
+        </td>
+        <td>
+            <p><h3 style="color:brown">Наша самая прибыльная пиццерия:</h3></p>
+            <p><h4>г.Самара ул.Черемшанская 71</h4></p>
+        </td>
+    </tr>
+</table>
 </footer>
 </body>
 </html>
