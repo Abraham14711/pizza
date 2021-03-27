@@ -2,13 +2,10 @@ from flask import Flask, render_template,request,redirect,url_for
 from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
+app.config["SQLALCHEMY_DATABASE_URI"] = 'sqlite:///db.sqlite'
+app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 db = SQLAlchemy()
-def create_app():
-    app = Flask(__name__)
-    app.config["SQLALCHEMY_DATABASE_URI"] = 'sqlite:///db.sqlite'
-    app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
-    db.init_app(app)
-    return app
+db.init_app(app)
 
 class User(db.Model):
     id = db.Column(db.Integer,primary_key=True)
@@ -39,7 +36,6 @@ def contacts():
 def new_things():
     return render_template('New things.html')
 
-
 @app.route('/new1')
 def new1():
     return render_template('new 1.html')
@@ -51,4 +47,5 @@ def new2():
 
 if __name__ == '__main__':
     app.run()
+
 
