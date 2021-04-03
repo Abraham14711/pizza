@@ -6,6 +6,7 @@ app.config["SQLALCHEMY_DATABASE_URI"] = 'sqlite:///db.sqlite'
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 db = SQLAlchemy()
 db.init_app(app)
+db.create_all()
 
 class User(db.Model):
     id = db.Column(db.Integer,primary_key=True)
@@ -47,5 +48,3 @@ def new2():
 
 if __name__ == '__main__':
     app.run()
-
-
